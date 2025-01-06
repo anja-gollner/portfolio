@@ -1,0 +1,109 @@
+// // background: linear-gradient(45deg, #1c1c1c 40%, #08463b 100%);   hero
+@import './../../../styles.scss';
+
+:host {
+    min-height: 100vh;
+    background: linear-gradient(
+      45deg,
+      $bg_dark 40%,
+      $bg_green 100%
+    );
+    color: $text;
+    @include dFlex($fd: column);
+  }
+
+.title {
+    @include dFlex($ai: center, $jc: center, $fd: column);
+    h1 {
+        font-weight: 600;
+        font-size: 80px;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    span {
+        text-align: center;
+        font-size: 32px;
+    }
+
+}
+
+.buttons {
+  @include dFlex($g: 48px)
+}
+
+
+.left-seperator {
+  @include dFlex($fd: column);
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  .vertical-line-left {
+    width: 1px;
+    background-color: $green-light;
+    height: 25vH;
+  }
+  .vector {
+    margin-bottom: 32px;
+    padding: 22px 16px;
+    border: 1px solid $green-light;
+    border-radius: 50%;
+    >img {
+      animation: wiggle 1s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateY(0);
+  }
+  12.5% {
+    transform: translateY(-2.5px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  62.5% {
+    transform: translateY(+2.5px);
+  }
+  85% {
+    transform: translateY(+5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.right-seperator {
+  @include dFlex($fd: column);
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  .vertical-line-right {
+    width: 1px;
+    background-color: $white;
+    height: 15vH;
+  }
+  .icons {
+    @include dFlex($fd: column, $g: 4px);
+  }
+  .github:hover {
+    content: url(./../../../assets/img/github-hover.png);
+  }
+  .linkedin:hover {
+    content: url(./../../../assets/img/linkedin-hover.png);
+  }
+  .mail-link {
+    @include dFlex($g: 8px);
+    writing-mode: vertical-lr;
+    text-orientation: sideways-left;
+    transform: rotate(180deg);
+    padding-top: 15px;
+    &:hover {
+      color: $green-light;
+    }
+  }
+}

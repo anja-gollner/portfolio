@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+
+:host {
+  display: flex;
+  justify-content: flex-start;
+  background-color: $bg_dark;
+  overflow: hidden;
+}
+
+img {
+    height: 100px;
+}

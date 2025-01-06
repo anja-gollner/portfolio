@@ -1,0 +1,41 @@
+@import '../../../styles.scss';
+
+:host {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(180deg, black 0%, transparent 60%);
+}
+
+nav {
+    @include dFlex($jc: space-between);
+    height: 98px;
+    padding: 96px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .left {
+        @include dFlex($g: 24px);
+    }
+    .menu {
+        @include dFlex($g: 24px);
+    
+    a {
+        font-family: 'Fira Code';
+        font-size: 20px;
+
+        &:hover {
+            color: $green_light;
+        }
+    }
+
+    }
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+
+
