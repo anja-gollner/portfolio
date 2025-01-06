@@ -44,36 +44,24 @@
   }
   .vector {
     margin-bottom: 32px;
-    padding: 22px 16px;
+    padding: 16px 12px;
     border: 1px solid $green-light;
-    border-radius: 50%;
+    border-radius: 32px;
     >img {
-      animation: wiggle 1s ease-in-out infinite;
+      animation: wiggle 1s ease-out infinite;
     }
   }
 }
 
 @keyframes wiggle {
   0% {
-    transform: translateY(0);
-  }
-  12.5% {
-    transform: translateY(-2.5px);
-  }
-  25% {
-    transform: translateY(-5px);
+    transform: translateY(50%);
   }
   50% {
-    transform: translateY(0);
-  }
-  62.5% {
-    transform: translateY(+2.5px);
-  }
-  85% {
-    transform: translateY(+5px);
+    transform: translateY(0%);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(50%);
   }
 }
 
@@ -105,5 +93,37 @@
     &:hover {
       color: $green-light;
     }
+  }
+}
+
+.marquee {
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  bottom: 30px;
+  padding: 12px 0;
+  font-size: 24px;
+  font-weight: 300;
+  transform: rotate(-2.4deg);
+  overflow: hidden;
+  .text_marquee {
+    display: inline-block;
+    animation: move-text 20s infinite linear;
+    white-space: nowrap;
+  }
+  span {
+    display: inline-block;
+    padding: 0 32px;
+    color: $green-light;
+  }
+}
+
+@keyframes move-text {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

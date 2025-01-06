@@ -1,12 +1,31 @@
 @import "../../../styles.scss";
 
 :host {
-  display: flex;
-  justify-content: flex-start;
+  @include dFlex();
   background-color: $bg_dark;
   overflow: hidden;
 }
 
-img {
-    height: 100px;
+section {
+    @include dFlex();
+    margin: 32px;
+    h2 {
+        font-weight: 600;
+        font-size: 46px;
+        font-family: 'Fira Code';
+        color: $green-light;
+    }
+    img{
+        width: 40%;
+        border-radius: 32px;
+    }
+    .about-me-text {
+        padding: 20px;
+        border: 1px solid $green-light;
+        border-radius: 32px;
+        background-color: rgba(10, 45, 36, 0.371);
+    }
+    span{
+        color: $green-light;
+    }
 }
