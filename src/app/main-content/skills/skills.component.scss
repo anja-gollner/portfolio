@@ -13,37 +13,44 @@ section {
   width: 100%;
 
   .text-box {
-    @include dFlex($fd: column);
+    @include dFlex($fd: column, $ai:flex-start);
     width: 100%;
+    margin: 30px;
+    .skills-head {
+        padding-bottom: 20px;
+        padding-left: 5px;
+        font-weight: 700;
+        font-size: 20px;
+      }
     .box-border {
+    @include dFlex($fd: column, $ai: flex-start);
       border: 1px solid $green-light;
       border-radius: 32px;
       background-color: rgba(10, 45, 36, 0.371);
-      padding: 20px;
+      padding: 30px;
     }
     span,
     h1 {
       color: $green-light;
-      padding: 10px 0;
+      padding: 5px 0;
     }
-    h2 {
-      @include dFlex($g: 8px);
+    h3 {
+      @include dFlex($g: 8px, $ai:flex-start);
       margin: 0;
-      display: inline-block;
       color: $green-light;
       padding: 10px 0;
+      font-size: 21px;
       .white {
-        color: $text;
-        margin-right: 7px;
+        color: $white;
       }
+      
     }
   }
   .skillset {
-    @include dFlex($jc: space-evenly,$ai: flex-start ,$g: 20px);
+    @include dFlex($jc: flex-start,$ai: flex-start ,$g: 20px);
     width: 100%;
     font-family: 'Fira Code';
     flex-wrap: wrap;
-    text-align: flex-start;
     .skill-icon {
         @include dFlex($fd: column, $g:8px);
         width: 128px;

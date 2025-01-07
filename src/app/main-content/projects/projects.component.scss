@@ -1,1 +1,11 @@
 @import './../../../styles.scss';
+
+:host {
+    @include dFlex();
+    background-color: $bg_dark;
+  }
+
+  section {
+    max-width: 1440px;
+    margin: 20px auto;
+  }
