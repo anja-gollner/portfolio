@@ -1,28 +1,35 @@
 <div class="title">
-    <span class="fontFira">Frontend Developer</span>
-    <h1>Anja Gollner</h1>
-    <div class="buttons">
-      <app-button [label]="'Check my work'" [targetId]="'projects'"></app-button>
-      <app-button [label]="'Contact me'" [targetId]="'about-me'"></app-button>
-    </div>
+  <span class="fontFira">{{ "hero.subtitle" | translate }}</span>
+  <h1>Anja Gollner</h1>
+  <div class="buttons">
+    <app-button
+      [label]="'heroBtn.projects' | translate"
+      [targetId]="'projects'"
+    ></app-button>
+    <app-button
+      [label]="'heroBtn.contact' | translate"
+      [targetId]="'about-me'"
+    ></app-button>
+  </div>
 </div>
 
 <div class="left-seperator">
   <div class="vector">
-    <img src="assets/img/scroll.svg" alt="">
+    <img src="assets/img/scroll.svg" alt="" />
   </div>
   <div class="vertical-line-left"></div>
 </div>
 
-
 <div class="right-seperator">
-  <a class="mail-link" href="'mailto: anjakgollner@gmail.com'">anjakgollnergmail.com</a>
+  <a class="mail-link" href="'mailto: anjakgollner@gmail.com'"
+    >anjakgollnergmail.com</a
+  >
   <div class="icons">
-    <a href="https://github.com/anja-gollner" target="_blank"> 
-      <img class="github" src="assets/img/github.png" alt="">
+    <a href="https://github.com/anja-gollner" target="_blank">
+      <img class="github" src="assets/img/github.png" alt="" />
     </a>
     <a href="https://www.linkedin.com/in/anja-gollner/" target="_blank">
-      <img class="linkedin" src="assets/img/linkedin.png" alt="">
+      <img class="linkedin" src="assets/img/linkedin.png" alt="" />
     </a>
   </div>
   <div class="vertical-line-right"></div>
@@ -30,21 +37,21 @@
 
 <div class="marquee">
   <div class="text_marquee">
-    <span>Frontend Developer 1</span>
+    <span>{{ "marquee.item1" | translate }}</span>
     <span>•</span>
-    <span>Available for remote work 2</span>
+    <span>{{ "marquee.item2" | translate }}</span>
     <span>•</span>
-    <span>Frontend Developer 3</span>
+    <span>{{ "marquee.item3" | translate }}</span>
     <span>•</span>
-    <span>Available for remote work 4</span>
+    <span>{{ "marquee.item4" | translate }}</span>
     <span>•</span>
-    <span>Frontend Developer 5</span>
+    <span>{{ "marquee.item1" | translate }}</span>
     <span>•</span>
-    <span>Available for remote work 6</span>
+    <span>{{ "marquee.item2" | translate }}</span>
     <span>•</span>
-    <span>Frontend Developer 7</span>
+    <span>{{ "marquee.item3" | translate }}</span>
     <span>•</span>
-    <span>Available for remote work 8</span>
+    <span>{{ "marquee.item4" | translate }}</span>
     <span>•</span>
   </div>
 </div>

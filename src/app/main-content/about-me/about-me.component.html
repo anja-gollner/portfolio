@@ -1,14 +1,28 @@
 <section>
-    <div>
-        <img src="assets/img/aboutme_ag.png" alt="">
+  <div class="about-me-pic">
+    <img src="assets/img/aboutme_ag.png" alt="Anja Gollner - WebDevelopment" />
+  </div>
+  <div class="text-box">
+    <span>{{ "aboutMe.subtitle" | translate }}</span>
+    <div class="about-me-text">
+      <h2>{{ "aboutMe.title" | translate }}</h2>
+      <p>{{ "aboutMe.text" | translate }}</p>
+
+      <div class="info-item">
+        <div class="info-icon"><img src="assets/img/location.png" alt=""></div>
+        <div class="info-text">{{ "aboutMe.location" | translate }}</div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon"><img src="assets/img/cognition.png"></div>
+        <div class="info-text">{{ "aboutMe.mindset" | translate }}</div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon"><img src="assets/img/quality.png"></div>
+        <div class="info-text">{{ "aboutMe.profession" | translate }}</div>
+      </div>
+      
     </div>
-    <div>
-        <span>Who I Am</span>
-        <div class="about-me-text">
-            <h2>About me</h2>
-            <p>Hi, I am ksdjöfsökld sdfaösjdf</p>
-        </div>
-    </div>
+  </div>
 </section>
-
-

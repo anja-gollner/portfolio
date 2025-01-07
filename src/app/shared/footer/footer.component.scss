@@ -1,15 +1,15 @@
 @import "../../../styles.scss";
 
 :host {
-    @include dFlex();
-    background-color: $bg_dark;
-    width: 100%;
+  @include dFlex();
+  background-color: $bg_dark;
+  width: 100%;
 }
 
 .left-div {
   @include dFlex($fd: column, $ai: flex-start, $g: 8px);
   img {
-    height: 100px;
+    height: 80px;
     cursor: pointer;
   }
 }
@@ -23,17 +23,18 @@
 }
 
 .right-div {
-    ul {
-        list-style: none;
-        @include dFlex($fd: column, $ai: flex-start)
-      }
-    a:hover {
-        color: $green-light;
-    }
+  ul {
+    list-style: none;
+    @include dFlex($fd: column, $ai: flex-start);
+  }
+  a:hover {
+    color: $green-light;
+  }
 }
 
 .wrapper {
-    width: 100%;
-    margin: 20px 30px;
+  width: 100%;
+  margin: 20px 30px;
+  max-width: 1440px;
   @include dFlex($jc: space-between);
 }

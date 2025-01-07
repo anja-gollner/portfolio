@@ -1,1 +1,65 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
+
+:host {
+  @include dFlex();
+  background: radial-gradient(circle at 0% 50%, $bg_green -20%, $bg_dark 20%);
+  overflow: hidden;
+}
+
+section {
+  @include dFlex($g: 50px, $jc: space-between);
+  max-width: 1440px;
+  margin: 50px auto;
+  width: 100%;
+
+  .text-box {
+    @include dFlex($fd: column);
+    width: 100%;
+    .box-border {
+      border: 1px solid $green-light;
+      border-radius: 32px;
+      background-color: rgba(10, 45, 36, 0.371);
+      padding: 20px;
+    }
+    span,
+    h1 {
+      color: $green-light;
+      padding: 10px 0;
+    }
+    h2 {
+      @include dFlex($g: 8px);
+      margin: 0;
+      display: inline-block;
+      color: $green-light;
+      padding: 10px 0;
+      .white {
+        color: $text;
+        margin-right: 7px;
+      }
+    }
+  }
+  .skillset {
+    @include dFlex($jc: space-evenly,$ai: flex-start ,$g: 20px);
+    width: 100%;
+    font-family: 'Fira Code';
+    flex-wrap: wrap;
+    text-align: flex-start;
+    .skill-icon {
+        @include dFlex($fd: column, $g:8px);
+        width: 128px;
+        padding: 10px 0;
+        img {
+            height: 56px;
+            transition: transform 500ms ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+  }
+}
+
+p {
+    font-weight: 300;
+    padding-bottom: 10px;
+}
