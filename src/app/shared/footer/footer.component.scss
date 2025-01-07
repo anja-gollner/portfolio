@@ -1,0 +1,39 @@
+@import "../../../styles.scss";
+
+:host {
+    @include dFlex();
+    background-color: $bg_dark;
+    width: 100%;
+}
+
+.left-div {
+  @include dFlex($fd: column, $ai: flex-start, $g: 8px);
+  img {
+    height: 100px;
+    cursor: pointer;
+  }
+}
+
+.center-div {
+  span {
+    color: $green_light;
+    font-family: "Fira Code";
+    font-size: 18px;
+  }
+}
+
+.right-div {
+    ul {
+        list-style: none;
+        @include dFlex($fd: column, $ai: flex-start)
+      }
+    a:hover {
+        color: $green-light;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    margin: 20px 30px;
+  @include dFlex($jc: space-between);
+}
