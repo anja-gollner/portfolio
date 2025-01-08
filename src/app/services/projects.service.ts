@@ -1,10 +1,13 @@
 import { Injectable } from '@angular/core';
+import { Project } from './../interfaces/project.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProjectsService {
-projects = [
+constructor() {}
+
+projects: Project[] = [
     {
       id: 1,
       title: 'Join',
@@ -34,8 +37,4 @@ projects = [
       projectUrl: 'https://dabubble.anja-gollner.com/',
     },
   ];
-
-  getProjects() {
-    return this.projects;
-  }
 }

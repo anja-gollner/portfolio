@@ -7,57 +7,40 @@
   overflow: hidden;
 }
 
-h2 {
-  font-size: 64px;
-  font-family: "Fira Code";
-  color: $green-light;
-}
-
-p {
-  margin-bottom: 16px;
-}
-
-span {
-  font-size: 20px;
-  font-weight: 700;
-  color: $green-light;
-}
-
-ul {
+.portfolio {
+  @include dFlex($fd: column, $ai: flex-start, $jc: flex-start, $g: 32px);
+  max-width: 1440px;
   width: 100%;
-}
-
-li {
-  list-style: none;
-  @include dFlex($jc: flex-start, $g: 32px);
-  align-items: stretch;
-  height: 109px;
-  cursor: pointer;
-  &:hover {
-    img,
-    .left img {
-      display: inline;
+  margin: 70px auto;
+  padding: 0 50px;
+  p {
+    margin-bottom: 16px;
+  }
+  span {
+    font-size: 20px;
+    font-weight: 700;
+    color: $green-light;
+  }
+  ul {
+    width: 100%;
+    li {
+      list-style: none;
+      @include dFlex($jc: flex-start, $g: 32px);
+      align-items: stretch;
+      height: 109px;
+      cursor: pointer;
+      &:hover {
+        img,
+        .left img {
+          display: inline;
+        }
+      }
     }
   }
 }
 
-.arrow {
-  display: inline;
-}
-
 .border-bottom {
   border-bottom: 1px solid $green-light;
-}
-
-.img-div {
-  @include dFlex();
-  background-image: repeating-linear-gradient(
-    -45deg,
-    $green-light $green-light 1px,
-    $bg_dark 1px,
-    $bg_dark 8px
-  );
-  border-radius: 16px;
 }
 
 .left-wrapper {
@@ -75,9 +58,34 @@ li {
     img {
       display: none;
     }
+    .arrow {
+      display: inline;
+    }
   }
   .right {
     font-size: 18px;
+    span {
+        color: $white;
+        font-weight: 300;
+    }
+    .project-stack {
+        padding: 0 10px;
+        display: inline-block;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 16px;
+            background-color: $green_light;
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
   }
 }
 
@@ -85,19 +93,21 @@ li {
   display: none;
   flex: 1;
   @include dFlex();
+  .img-div {
+    @include dFlex();
+    background-image: repeating-linear-gradient(
+      -45deg,
+      $green-light $green-light 1px,
+      $bg_dark 1px,
+      $bg_dark 8px
+    );
+    border-radius: 16px;
+  }
 }
-
-.screenshot {
-    position: relative;
-    right: 16px;
-    bottom: 16px;
-    width: 300px;
+.project-img {
+  position: relative;
+  right: 16px;
+  bottom: 16px;
+  width: 300px;
   display: none;
-}
-
-.wrapper {
-  @include dFlex($fd: column, $ai: flex-start, $jc: flex-start, $g: 32px);
-  max-width: 1440px;
-  width: 100%;
-  margin: 70px;
 }

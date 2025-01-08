@@ -1,33 +1,29 @@
-<div class="wrapper">
-    <span>Portfolio</span>
-    <h2>{{ "projects.title" | translate }}</h2>
-    <p>{{ "projects.text" | translate }}</p>
-    <ul>
-      @for (project of projects; track project.id;) {
-      <li data-aos="fade-up" data-aos-duration="5000" [attr.data-aos-delay]="$index * 150">
-        <div
-          class="left-wrapper"
-        >
-          <div class="left">
-            {{ project.title }}
-            <div class="arrow">
-              <img src="assets/img/arrow_outward.svg" alt="">
-            </div>
-          </div>
-          <div class="right">{{ project.stack.join(" | ") }}</div>
-        </div>
-        <div class="right-wrapper">
-          <div class="img-div">
-            <img
-              class="screenshot"
-              [src]="project.imageUrl"
-              [alt]="project.title"
-            />
+<div class="portfolio">
+  <span>Portfolio</span>
+  <h2>{{ "projects.title" | translate }}</h2>
+  <p>{{ "projects.text" | translate }}</p>
+  <ul>
+    <li *ngFor="let project of projectinfos.projects">
+      <div class="left-wrapper">
+        <div class="left">
+          {{ project.title }}
+          <div class="arrow">
+            <img src="assets/img/arrow_outward.svg" alt="" />
           </div>
         </div>
-      </li>
-      }
-    </ul>
-
-  </div>
-  
+        <div class="right">
+          <span
+            *ngFor="let singlestack of project.stack"
+            class="project-stack"
+            >{{ singlestack }}</span
+          >
+        </div>
+      </div>
+      <div class="right-wrapper">
+        <div class="img-div">
+          <img class="project-img" [src]="project.imageUrl" />
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

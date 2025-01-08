@@ -2,17 +2,17 @@ import { Component, inject, signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectsService } from '../../services/projects.service';
 import { OverlayComponent } from '../overlay/overlay.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [TranslateModule, OverlayComponent],
+  imports: [TranslateModule, OverlayComponent, CommonModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  private projectsService = inject(ProjectsService);
-  projects = this.projectsService.getProjects();
+  projectinfos = inject(ProjectsService);
 
 
   overlayVisible = signal(false);
