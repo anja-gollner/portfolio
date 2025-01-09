@@ -1,0 +1,38 @@
+<div *ngIf="project" class="overlay">
+  <div class="overlay-content">
+    <div class="overlay-info">
+      <h1>{{ "0" + project.id }}</h1>
+      <h2>{{ project.title }}</h2>
+      <p>{{ "overlay.question" | translate }}</p>
+      <span> {{ "overlay.description." + project.id | translate }}</span>
+      <div class="skills">
+        <div *ngFor="let singlestack of project.stack" class="skillset">
+          <img [src]="getStackIconPath(singlestack)" alt="{{ singlestack }}" alt="" />
+          <span >
+            {{ singlestack }}</span
+          >
+        </div>
+      </div>
+      <div class="buttons">
+        <button>
+          <span>Github</span>
+          <img src="assets/img/arrow_outward_green.svg" alt="" />
+        </button>
+        <button>
+          <span>Live Test</span>
+          <img src="assets/img/arrow_outward_green.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div class="overlay-img">
+      <img [src]="project.imgOverlay" alt="" />
+    </div>
+      <button (click)="nextProject()" class="next">
+        {{ "overlay.next" | translate }}
+        <img src="assets/img/arrow-forward-green.png" />
+      </button>
+      <button (click)="emitCloseEvent()" class="close">
+        <img src="assets/img/close.svg" />
+      </button>
+  </div>
+</div>

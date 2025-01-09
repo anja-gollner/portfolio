@@ -1,8 +1,9 @@
 import { Component, inject, signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectsService } from '../../services/projects.service';
-import { OverlayComponent } from '../overlay/overlay.component';
+import { OverlayComponent } from './overlay/overlay.component';
 import { CommonModule } from '@angular/common';
+import { Project } from '../../interfaces/project.interface';
 
 @Component({
   selector: 'app-projects',
@@ -13,12 +14,13 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectsComponent {
   projectinfos = inject(ProjectsService);
-
+  projects = this.projectinfos.getProjects();
 
   overlayVisible = signal(false);
-  selectedProject = signal<ProjectsService | null>(null);
+  selectedProject = signal<Project | null>(null);
 
-  openOverlay(project: ProjectsService) {
+
+  openOverlay(project: Project) {
     this.selectedProject.set(project);
     this.overlayVisible.set(true);
     document.body.classList.add('no-scroll');

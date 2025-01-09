@@ -1,0 +1,101 @@
+@import "./../../../../styles.scss";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include dFlex();
+  background-color: rgba($bg_dark, 0.6);
+  z-index: 1000;
+
+  .overlay-content {
+    @include dFlex();
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(45deg, $bg_dark 40%, $bg_green 100%);
+    border-radius: calc(2vh + 2vw);
+    border: 1px solid $green-light;
+    max-width: 1440px;
+
+    .overlay-info {
+      @include dFlex($fd: column, $ai: flex-start);
+      width: 80%;
+      padding: 48px;
+      p {
+        font-family: "Fira Code";
+        font-size: 24px;
+        color: $green-light;
+        font-weight: 500;
+        padding: 20px 0 20px 0;
+      }
+      h1 {
+        font-size: 80px;
+        color: $green-light;
+      }
+      h2 {
+        color: $text;
+      }
+      .buttons {
+        @include dFlex($g: 8px);
+        margin-top: 8px;
+        button {
+          @include dFlex($g: 3px);
+          background-color: transparent;
+          color: $text;
+          border: 1px solid $text;
+          border-radius: 32px;
+          padding: 12px;
+        }
+      }
+    }
+
+    .overlay-img {
+      @include dFlex();
+      img {
+        width: 100%;
+        padding: 48px;
+      }
+    }
+  }
+}
+
+.skills {
+  @include dFlex();
+  padding: 16px 0;
+  .skillset {
+    @include dFlex($g: 8px);
+    padding-right: 20px;
+    img {
+      @include dFlex();
+    }
+  }
+}
+
+.next {
+  @include dFlex($g: 8px);
+  position: absolute;
+  bottom: 16vh;
+  right: 16vw;
+  border: none;
+  background-color: transparent;
+  color: $green-light;
+  &:hover {
+    color: white;
+    transform: scale(1.09);
+  }
+}
+
+.close {
+  @include dFlex($g: 8px);
+  position: absolute;
+  top: 16vh;
+  right: 16vw;
+  border: none;
+  background-color: transparent;
+  color: $green-light;
+  &:hover {
+    content: url("./../../../../assets/img/close-hover.svg");
+  }
+}

@@ -3,6 +3,7 @@ export interface Project {
   title: string;
   stack: string[];
   imageUrl: string;
+  imgOverlay: string;
   description: string;
   gitHubUrl: string;
   projectUrl: string;

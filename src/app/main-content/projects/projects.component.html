@@ -3,8 +3,8 @@
   <h2>{{ "projects.title" | translate }}</h2>
   <p>{{ "projects.text" | translate }}</p>
   <ul>
-    <li *ngFor="let project of projectinfos.projects">
-      <div class="left-wrapper">
+    <li *ngFor="let project of projects">
+      <div class="left-wrapper" (click)="openOverlay(project)">
         <div class="left">
           {{ project.title }}
           <div class="arrow">
@@ -27,3 +27,11 @@
     </li>
   </ul>
 </div>
+
+<app-overlay 
+*ngIf="overlayVisible()"
+  [project]="selectedProject()"
+  [projects]="projects"
+  (close)="closeOverlay()"
+/>
+
