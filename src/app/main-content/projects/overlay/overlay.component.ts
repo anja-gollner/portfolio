@@ -35,6 +35,15 @@ export class OverlayComponent {
     }
   }
 
+  redirectToUrl(url: string): void {
+    if (url) {
+      window.open(url, '_blank');
+    } else {
+      console.error('URL is not defined!');
+    }
+  }
+  
+
   nextProject(): void {
     if (this.projects.length > 0) {
       this.currentIndex = (this.currentIndex + 1) % this.projects.length;

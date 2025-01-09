@@ -3,8 +3,8 @@
   <h2>{{ "projects.title" | translate }}</h2>
   <p>{{ "projects.text" | translate }}</p>
   <ul>
-    <li *ngFor="let project of projects">
-      <div class="left-wrapper" (click)="openOverlay(project)">
+    <li *ngFor="let project of projects; let isLast = last">
+      <div class="left-wrapper" (click)="openOverlay(project)" [ngClass]="{ 'border-bottom': isLast }">
         <div class="left">
           {{ project.title }}
           <div class="arrow">

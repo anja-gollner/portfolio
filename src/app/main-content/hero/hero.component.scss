@@ -1,36 +1,29 @@
-// // background: linear-gradient(45deg, #1c1c1c 40%, #08463b 100%);   hero
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 :host {
-    min-height: 100vh;
-    background: linear-gradient(
-      45deg,
-      $bg_dark 40%,
-      $bg_green 100%
-    );
-    color: $text;
-    @include dFlex($fd: column);
-  }
+  min-height: 100vh;
+  background: linear-gradient(45deg, $bg_dark 40%, $bg_green 100%);
+  color: $text;
+  @include dFlex($fd: column);
+}
 
 .title {
-    @include dFlex($ai: center, $jc: center, $fd: column);
-    h1 {
-        font-weight: 600;
-        font-size: 80px;
-        text-align: center;
-        margin-bottom: 28px;
-    }
-    span {
-        text-align: center;
-        font-size: 32px;
-    }
-
+  @include dFlex($ai: center, $jc: center, $fd: column);
+  h1 {
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  span {
+    text-align: center;
+    font-size: 32px;
+  }
 }
 
 .buttons {
-  @include dFlex($g: 48px)
+  @include dFlex($g: 48px);
 }
-
 
 .left-seperator {
   @include dFlex($fd: column);
@@ -40,14 +33,14 @@
   .vertical-line-left {
     width: 1px;
     background-color: $green-light;
-    height: 25vH;
+    height: 25vh;
   }
   .vector {
     margin-bottom: 32px;
     padding: 16px 12px;
     border: 1px solid $green-light;
     border-radius: 32px;
-    >img {
+    > img {
       animation: wiggle 1s ease-out infinite;
     }
   }
@@ -73,7 +66,7 @@
   .vertical-line-right {
     width: 1px;
     background-color: $white;
-    height: 15vH;
+    height: 15vh;
   }
   .icons {
     @include dFlex($fd: column, $g: 4px);

@@ -1,38 +1,92 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 :host {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(180deg, black 0%, transparent 60%);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(180deg, black 0%, transparent 60%);
 }
 
 nav {
-    @include dFlex($jc: space-between);
-    height: 98px;
-    padding: 96px 0;
-    max-width: 1440px;
-    margin: 0 auto;
+  @include dFlex($jc: space-between);
+  height: 98px;
+  padding: 96px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 
-    .left {
-        @include dFlex($g: 24px);
-    }
-    .menu {
-        @include dFlex($g: 24px);
-    
+  .left {
+    @include dFlex($g: 24px);
+  }
+  .menu {
+    @include dFlex($g: 24px);
+
     a {
-        font-family: 'Fira Code';
-        font-size: 20px;
+      font-family: "Fira Code";
+      font-size: 20px;
 
-        &:hover {
-            color: $green_light;
-        }
+      &:hover {
+        color: $green_light;
+      }
     }
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+}
 
+.logo {
+  width: 100px;
+  height: 100px;
+  @media (max-width: 700px) {
+    margin-left: 0; 
+    position: absolute;
+  }
+}
+
+.burger-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 16px;
+
+  @media (max-width: 700px) {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 32px 32px;
+  border-bottom: 1px solid $green-light;
+  padding: 46px;
+  z-index: 100;
+
+  .close-menu {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+
+  a {
+    font-family: "Fira Code";
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $green_light;
     }
   }
 
-.logo {
-    width: 100px;
-    height: 100px;
+  &.active {
+    @include dFlex($fd: column);
+  }
 }

@@ -16,7 +16,18 @@ export class NavbarComponent {
   imageDE = 'assets/img/toggle-de.png';
   imageEN = 'assets/img/toggle-en.png';
 
+  isMenuOpen: boolean = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
   toggleLanguage(): void {
     this.languageService.toggleLanguage();
   }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
+  }
+
 }

@@ -1,11 +1,38 @@
 <nav>
-    <div class="left">
-      <img (click)="toggleLanguage()" [src]="languageService.currentLanguage() === 'en' ? imageEN : imageDE " alt="">
-      <div class="menu">
-        <a href="#about-me">{{ 'nav.aboutMe' | translate }}</a>
-        <a href="#skills">{{ 'nav.skills' | translate }}</a>
-        <a href="#projects">{{ 'nav.projects' | translate }}</a>
-      </div>
-    </div> 
-    <img class="logo" src="assets/img/logo_ag.png" alt="" />
+  <div class="left">
+    <div class="menu">
+      <img
+        (click)="toggleLanguage()"
+        [src]="languageService.currentLanguage() === 'en' ? imageEN : imageDE"
+        alt=""
+      />
+      <a href="#about-me">{{ "nav.aboutMe" | translate }}</a>
+      <a href="#skills">{{ "nav.skills" | translate }}</a>
+      <a href="#projects">{{ "nav.projects" | translate }}</a>
+    </div>
+  </div>
+  <img class="logo" src="assets/img/logo_ag.png" alt="" />
+  <img
+    src="assets/img/burger.svg"
+    alt="Burger Menu"
+    class="burger-menu"
+    (click)="toggleMenu()"
+  />
 </nav>
+
+<div class="mobile-menu" [class.active]="isMenuOpen" (click)="closeMenu()">
+  <img
+    src="assets/img/close.svg"
+    alt="Close Menu"
+    class="close-menu"
+    (click)="closeMenu()"
+  />
+  <a href="#about-me">{{ "nav.aboutMe" | translate }}</a>
+  <a href="#skills">{{ "nav.skills" | translate }}</a>
+  <a href="#projects">{{ "nav.projects" | translate }}</a>
+  <img
+    (click)="toggleLanguage()"
+    [src]="languageService.currentLanguage() === 'en' ? imageEN : imageDE"
+    alt=""
+  />
+</div>

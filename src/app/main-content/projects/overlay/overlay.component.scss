@@ -47,6 +47,18 @@
           border: 1px solid $text;
           border-radius: 32px;
           padding: 12px;
+          transition: all 0.3s ease;
+          img {
+            position: relative;
+            transition: transform 0.3s ease;
+          }
+          &:hover {
+            color: $green-light;
+            border-color: $green-light;
+          }
+          &:hover img {
+            transform: translate(5px, -5px);
+          }
         }
       }
     }

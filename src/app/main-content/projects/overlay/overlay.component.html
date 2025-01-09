@@ -14,11 +14,11 @@
         </div>
       </div>
       <div class="buttons">
-        <button>
+        <button (click)="redirectToUrl(project.gitHubUrl)">
           <span>Github</span>
           <img src="assets/img/arrow_outward_green.svg" alt="" />
         </button>
-        <button>
+        <button (click)="redirectToUrl(project.projectUrl)">
           <span>Live Test</span>
           <img src="assets/img/arrow_outward_green.svg" alt="" />
         </button>

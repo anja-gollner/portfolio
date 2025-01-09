@@ -1,1 +1,11 @@
 @import './../../styles.scss';
+
+:host {
+    @include dFlex();
+    background-color: $bg_dark;
+  }
+
+div {
+    width: 100%;
+    @include dFlex($fd: column);
+}

@@ -6,11 +6,13 @@
 }
 
 section {
-  @include dFlex($g: 50px);
+  @include dFlex($g: 50px, $ai: flex-start);
   max-width: 1440px;
   margin: 70px auto;
+  padding: 0 40px;
   .contact-text {
     @include dFlex($fd: column, $ai: flex-start);
+    width: 100%;
     h3 {
       color: $green-light;
       font-weight: 700;
@@ -29,10 +31,12 @@ section {
     }
     p {
       font-size: 16px;
+      padding: 8px 0;
       span {
         color: $green-light;
         font-size: 16px;
         font-weight: 700;
+        
       }
     }
   }
@@ -59,6 +63,8 @@ form {
       width: 100%;
       padding: 5px;
       color: $text;
+      resize: none;
+      cursor: pointer;
     }
   }
   .form-name {
@@ -67,7 +73,7 @@ form {
   .checkbox {
     @include dFlex($jc: flex-start, $g: 16px);
     width: 100%;
-    margin-top: 32px;
+    margin-top: 36px;
     input[type="checkbox"] {
       @include dFlex();
       background-color: transparent;
@@ -136,8 +142,9 @@ form {
     }
   }
   .submit-btn[disabled] {
-    border-color: #ccc;
-    color: #ccc;
+    border-color: #868686;
+    background-color: rgba(#868686, 0.3);
+    color: #9d9d9d;
     cursor: not-allowed;
     pointer-events: none;
   }
