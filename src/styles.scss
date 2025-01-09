@@ -34,6 +34,19 @@ body {
   color: $white;
 }
 
+@media (max-width: 944px) {
+  section {
+    flex-direction: column !important;
+  } 
+}
+
+@media (max-width: 567px) {
+  h2 {
+    font-size: 36px !important;
+  } 
+}
+
+
 a {
   text-decoration: none;
   color: $text;
@@ -46,6 +59,7 @@ a {
 .fontFira {
   font-family: "Fira Code";
 }
+
 
 h2 {
   font-weight: 600;

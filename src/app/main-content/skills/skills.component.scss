@@ -11,6 +11,7 @@ section {
   max-width: 1440px;
   margin: 50px auto;
   width: 100%;
+  padding: 0 50px;
 
   .text-box {
     @include dFlex($fd: column, $ai:flex-start);
@@ -28,6 +29,7 @@ section {
       border-radius: 32px;
       background-color: rgba(10, 45, 36, 0.371);
       padding: 30px;
+      width: 100%;
     }
     span,
     h1 {
@@ -47,7 +49,7 @@ section {
     }
   }
   .skillset {
-    @include dFlex($jc: flex-start,$ai: flex-start ,$g: 20px);
+    @include dFlex($g: 20px);
     width: 100%;
     font-family: 'Fira Code';
     flex-wrap: wrap;

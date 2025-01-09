@@ -5,11 +5,12 @@
   background-color: $bg_dark;
 }
 
+
 section {
   @include dFlex($g: 50px);
   max-width: 1440px;
   width: 100%;
-  padding: 160px 80px 100px 80px;
+  padding: 160px 50px 100px 50px;
   .about-me-pic {
     @include dFlex($ai: flex-start);
     margin-bottom: 32px;

@@ -18,6 +18,11 @@
     border-radius: calc(2vh + 2vw);
     border: 1px solid $green-light;
     max-width: 1440px;
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse;
+      padding: 0 !important;
+      height: auto;
+    }
 
     .overlay-info {
       @include dFlex($fd: column, $ai: flex-start);

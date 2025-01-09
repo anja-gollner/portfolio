@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+:host {
+    @include dFlex($fd: column);
+    background-color: $bg_dark;
+    width: 100%;
+    min-height: 100%;
+    flex-grow: 1;
+}
+
+.privacy-policy {
+    @include dFlex($fd: column, $ai: flex-start, $g: 16px);
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100%;
+    margin-top: 128px;
+}

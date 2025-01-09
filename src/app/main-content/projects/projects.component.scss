@@ -1,10 +1,10 @@
 @import "../../../styles.scss";
 
 :host {
-  background-color: $bg_dark;
   @include dFlex($jc: flex-start);
   min-width: 100vw;
   overflow: hidden;
+  background-color: $bg_dark;
 }
 
 .portfolio {
@@ -102,6 +102,9 @@
       $bg_dark 8px
     );
     border-radius: 16px;
+  }
+  @media (max-width: 1000px) {
+    display: none;
   }
 }
 .project-img {

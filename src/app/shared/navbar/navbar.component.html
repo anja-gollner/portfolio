@@ -27,9 +27,9 @@
     class="close-menu"
     (click)="closeMenu()"
   />
-  <a href="#about-me">{{ "nav.aboutMe" | translate }}</a>
-  <a href="#skills">{{ "nav.skills" | translate }}</a>
-  <a href="#projects">{{ "nav.projects" | translate }}</a>
+  <a (click)="closeMenu()" href="#about-me">{{ "nav.aboutMe" | translate }}</a>
+  <a (click)="closeMenu()" href="#skills">{{ "nav.skills" | translate }}</a>
+  <a (click)="closeMenu()" href="#projects">{{ "nav.projects" | translate }}</a>
   <img
     (click)="toggleLanguage()"
     [src]="languageService.currentLanguage() === 'en' ? imageEN : imageDE"
