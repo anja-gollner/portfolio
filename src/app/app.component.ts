@@ -5,6 +5,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslateService } from '@ngx-translate/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-root',
@@ -27,5 +29,14 @@ export class AppComponent {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
   }
+
   title = 'portfolio';
+
+  ngAfterViewInit(): void {
+    AOS.init({
+      duration: 2000,
+      offset: 0,
+      once: true,
+    });
+  }
 }

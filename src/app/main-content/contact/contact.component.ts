@@ -38,8 +38,7 @@ export class ContactComponent {
   onSubmit(ngForm: NgForm) {
     this.formSubmitted = true;
     if (ngForm.submitted && ngForm.form.valid) {
-      this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             this.emailSent = true;
@@ -50,6 +49,6 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    }
+    } 
   }
 }

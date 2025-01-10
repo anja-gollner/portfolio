@@ -14,10 +14,16 @@
     font-size: 80px;
     text-align: center;
     margin-bottom: 28px;
+    @media (max-width: 644px) {
+      font-size: 7vH;
+    }
   }
   span {
     text-align: center;
     font-size: 32px;
+    @media (max-width: 644px) {
+      font-size: 3vH;
+    }
   }
 }
 
@@ -43,6 +49,9 @@
     > img {
       animation: wiggle 1s ease-out infinite;
     }
+  }
+  @media (max-width: 1000px) {
+    left: 5%;
   }
 }
 
@@ -86,6 +95,9 @@
     &:hover {
       color: $green-light;
     }
+  }
+  @media (max-width: 1000px) {
+    right: 5%;
   }
 }
 

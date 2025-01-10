@@ -55,6 +55,7 @@
     font-family: "Fira Code";
     font-size: 24px;
     font-weight: 700;
+    padding-left: 10px;
     img {
       display: none;
     }
@@ -86,6 +87,9 @@
             display: none;
         }
     }
+  }
+  @media (max-width: 644px) {
+    @include dFlex($fd:column, $ai: flex-start)
   }
 }
 

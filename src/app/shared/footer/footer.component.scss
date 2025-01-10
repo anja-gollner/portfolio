@@ -11,6 +11,9 @@
   img {
     height: 80px;
     cursor: pointer;
+    @media (max-width: 567px) {
+      height: 50px;;
+    }
   }
 }
 
@@ -19,6 +22,9 @@
     color: $green_light;
     font-family: "Fira Code";
     font-size: 18px;
+    @media (max-width: 567px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -37,4 +43,7 @@
   margin: 20px 30px;
   max-width: 1440px;
   @include dFlex($jc: space-between);
+  @media (max-width: 567px) {
+    font-size: 12px;
+  }
 }

@@ -35,6 +35,9 @@ section {
     h1 {
       color: $green-light;
       padding: 5px 0;
+      @media (max-width: 567px) {
+        padding: 0;
+      }
     }
     h3 {
       @include dFlex($g: 8px, $ai:flex-start);
@@ -45,7 +48,10 @@ section {
       .white {
         color: $white;
       }
-      
+      @media (max-width: 567px) {
+        @include dFlex($g:0, $fd: column, $ai: flex-start);
+        padding: 0;
+      }
     }
   }
   .skillset {
