@@ -8,11 +8,12 @@
 
 .left-div {
   @include dFlex($fd: column, $ai: flex-start, $g: 8px);
+  font-size: 12px;
   img {
     height: 80px;
     cursor: pointer;
     @media (max-width: 567px) {
-      height: 50px;;
+      height: 50px;
     }
   }
 }
@@ -21,10 +22,12 @@
   span {
     color: $green_light;
     font-family: "Fira Code";
-    font-size: 18px;
-    @media (max-width: 567px) {
-      font-size: 14px;
-    }
+    font-size: 14px;
+  }
+  @media (max-width: 567px) {
+    font-size: 14px;
+    display: flex;
+    text-align: center;
   }
 }
 
@@ -45,5 +48,9 @@
   @include dFlex($jc: space-between);
   @media (max-width: 567px) {
     font-size: 12px;
+  }
+  @media (max-width: 370px) {
+    margin: 16px;
+    gap: 8px;
   }
 }

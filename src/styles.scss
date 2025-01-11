@@ -32,6 +32,7 @@ $white: #ffffff;
 body {
   font-family: "Karla";
   color: $white;
+  overflow-x: hidden;
 }
 
 @media (max-width: 944px) {
@@ -40,9 +41,17 @@ body {
   } 
 }
 
+
 @media (max-width: 567px) {
   h2 {
     font-size: 36px !important;
+  } 
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 0 22px !important;
+    gap: 0 !important;
   } 
 }
 

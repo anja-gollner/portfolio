@@ -7,10 +7,12 @@
       <span> {{ "overlay.description." + project.id | translate }}</span>
       <div class="skills">
         <div *ngFor="let singlestack of project.stack" class="skillset">
-          <img [src]="getStackIconPath(singlestack)" alt="{{ singlestack }}" alt="" />
-          <span >
-            {{ singlestack }}</span
-          >
+          <img
+            [src]="getStackIconPath(singlestack)"
+            alt="{{ singlestack }}"
+            alt=""
+          />
+          <span> {{ singlestack }}</span>
         </div>
       </div>
       <div class="buttons">
@@ -23,16 +25,24 @@
           <img src="assets/img/arrow_outward_green.svg" alt="" />
         </button>
       </div>
-    </div>
-    <div class="overlay-img">
-      <img [src]="project.imgOverlay" alt="" />
-    </div>
-      <button (click)="nextProject()" class="next">
+      <button (click)="nextProject()" class="next left">
         {{ "overlay.next" | translate }}
         <img src="assets/img/arrow-forward-green.png" />
       </button>
-      <button (click)="emitCloseEvent()" class="close">
-        <img src="assets/img/close.svg" />
+    </div>
+    <div class="right-wrapper">
+      <div>
+        <button (click)="emitCloseEvent()" class="close">
+          <img src="assets/img/close.svg" />
+        </button>
+      </div>
+      <div class="overlay-img">
+        <img [src]="project.imgOverlay" alt="" />
+      </div>
+      <button (click)="nextProject()" class="next right">
+        {{ "overlay.next" | translate }}
+        <img src="assets/img/arrow-forward-green.png" />
       </button>
+    </div>
   </div>
 </div>

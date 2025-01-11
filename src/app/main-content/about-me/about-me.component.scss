@@ -14,10 +14,13 @@ section {
   .about-me-pic {
     @include dFlex($ai: flex-start);
     margin-bottom: 32px;
+    @media (max-width: 944px) {
+      margin-top: 32px;
+      width: 80%;
+    }
     img {
       border-radius: 32px;
-      width: 400px;
-      height: 400px;
+      width: 100%;
     }
   }
   .text-box {

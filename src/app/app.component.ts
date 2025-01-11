@@ -36,7 +36,9 @@ export class AppComponent {
     AOS.init({
       duration: 2000,
       offset: 0,
-      once: true,
+      once: false,
+      disable: false,
+      mirror: false,
     });
   }
 }

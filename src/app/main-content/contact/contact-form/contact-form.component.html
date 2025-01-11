@@ -1,0 +1,105 @@
+<div data-aos="fade-up" class="submit-form">
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <div class="form-row form-name">
+      <label for="name">{{ "contactForm.nameLabel" | translate }}</label>
+      <input
+        #name="ngModel"
+        [(ngModel)]="contactData.name"
+        type="text"
+        id="name"
+        name="name"
+        [placeholder]="
+          !name.valid && name.touched
+            ? ('contactForm.nameError' | translate)
+            : ('contactForm.namePlaceholder' | translate)
+        "
+        required
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="form-row">
+      <label for="email">{{ "contactForm.emailLabel" | translate }}</label>
+      <input
+        #email="ngModel"
+        [(ngModel)]="contactData.email"
+        type="email"
+        id="email"
+        name="email"
+        [placeholder]="
+          !email.valid && email.touched
+            ? ('contactForm.emailError' | translate)
+            : ('contactForm.emailPlaceholder' | translate)
+        "
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        (focus)="emailFocused = true"
+        (blur)="emailFocused = false"
+        autocomplete="off"
+      />
+      @if(email.touched && email.value && (emailFocused === false) &&
+      email.errors?.['pattern']) {
+      <div class="error">
+        {{ "contactForm.emailInvalid" | translate }}
+      </div>
+      }
+    </div>
+
+    <div class="form-row border-bottom">
+      <label for="message">{{ "contactForm.messageLabel" | translate }}</label>
+      <textarea
+        #message="ngModel"
+        rows="1"
+        [(ngModel)]="contactData.message"
+        id="message"
+        name="message"
+        [placeholder]="
+          !message.valid && message.touched
+            ? ('contactForm.messageError' | translate)
+            : ('contactForm.messagePlaceholder' | translate)
+        "
+        required
+      ></textarea>
+    </div>
+
+    <div class="privacy-policity checkbox">
+      <input
+        #privacyPolicy="ngModel"
+        type="checkbox"
+        id="privacyPolicy"
+        name="privacyPolicy"
+        [(ngModel)]="privacyPolicyChecked"
+        required
+      />
+      <label for="privacyPolicy"
+        >{{ "contactForm.privacyPolicy1" | translate }}
+        <a routerLink="/privacy-policy"
+          >{{ "contactForm.privacyPolicy2" | translate }} </a
+        >{{ "contactForm.privacyPolicy3" | translate }}
+      </label>
+    </div>
+    @if(!privacyPolicyChecked && name.valid && email.valid && message.valid) {
+    <span class="error">{{
+      "contactForm.privacyPolicyError" | translate
+    }}</span>
+    }
+
+    <div class="btn-submit">
+      <button
+        type="submit"
+        class="submit-btn"
+        value="Submit"
+        [disabled]="contactForm.invalid"
+        [class.form-valid]="contactForm.valid"
+      >
+        <span>{{ "contactForm.submitBtn" | translate }}</span>
+      </button>
+    </div>
+  </form>
+
+  @if(formSubmitted()){
+  <div class="submit-message">
+    <p class="success">{{ "contactForm.successMessage" | translate }}</p>
+  </div>
+  }
+</div>

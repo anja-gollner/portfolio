@@ -47,6 +47,12 @@
     },
     "next": "Next project"
   },
+  "references": {
+    "textbox1": "hallo1",
+    "textbox2": "hallo2",
+    "textbox3": "hallo3",
+    "title": "What my colleagues say about me"
+  },
   "contact": {
     "subtitle": "Contact me",
     "title": "Let's work together",

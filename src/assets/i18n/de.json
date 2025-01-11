@@ -27,7 +27,7 @@
   },
   "skills": {
     "subtitle": "Technologien",
-    "title": "Fähigkeiten",
+    "title": "Skill set",
     "q1": "Sie benötigen",
     "q2": "weitere Fähigkeiten?",
     "text": "Auf meinem Weg habe ich an vielfältigen Projekten gearbeitet und dabei eine Reihe von Frontend-Technologien und Konzepten eingesetzt. Ich bin offen dafür, neue Technologien und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig wandelnden Welt der Webentwicklung stets einen Schritt voraus zu sein.",
@@ -46,6 +46,12 @@
       "3": "Diese App ist ein Slack-Clone. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation."
     },
     "next": "Nächstes Projekt"
+  },
+  "references": {
+    "textbox1": "hallo1",
+    "textbox2": "hallo2",
+    "textbox3": "hallo3",
+    "title": "Was meine Kollegen über mich sagen"
   },
   "contact": {
     "subtitle": "Kontaktieren Sie mich",

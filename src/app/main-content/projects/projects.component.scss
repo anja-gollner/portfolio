@@ -7,12 +7,16 @@
   background-color: $bg_dark;
 }
 
-.portfolio {
-  @include dFlex($fd: column, $ai: flex-start, $jc: flex-start, $g: 32px);
+section {
   max-width: 1440px;
   width: 100%;
   margin: 70px auto;
   padding: 0 50px;
+}
+
+.portfolio {
+  @include dFlex($fd: column, $ai: flex-start, $jc: flex-start, $g: 32px);
+  
   p {
     margin-bottom: 16px;
   }

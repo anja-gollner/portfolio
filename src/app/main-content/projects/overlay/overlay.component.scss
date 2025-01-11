@@ -13,14 +13,14 @@
   .overlay-content {
     @include dFlex();
     width: 80%;
+    overflow-y: auto;
     height: 80%;
     background: linear-gradient(45deg, $bg_dark 40%, $bg_green 100%);
     border-radius: calc(2vh + 2vw);
     border: 1px solid $green-light;
     max-width: 1440px;
-    @media (max-width: 1000px) {
+    @media (max-width: 1000px) and (min-height: 800px) {
       flex-direction: column-reverse;
-      padding: 0 !important;
       height: auto;
     }
 
@@ -74,7 +74,7 @@
         width: 100%;
         padding: 48px;
         @media (max-width: 1000px) {
-          width: 300px;
+          width: 80%;
           padding: 30px 0 0 0;
         }
       }
@@ -83,8 +83,9 @@
 }
 
 .skills {
-  @include dFlex();
+  @include dFlex($jc: flex-start);
   padding: 16px 0;
+  flex-wrap: wrap;
   .skillset {
     @include dFlex($g: 8px);
     padding-right: 20px;
@@ -96,27 +97,87 @@
 
 .next {
   @include dFlex($g: 8px);
-  position: absolute;
-  bottom: 16vh;
-  right: 16vw;
   border: none;
   background-color: transparent;
   color: $green-light;
   &:hover {
     color: white;
-    transform: scale(1.09);
+  }
+  &:hover img {
+    transform: translate(5px);
+  }
+}
+.left {
+  display: none !important;
+}
+
+@media (max-width: 1000px) and (min-height: 800px){
+  .left {
+    display: flex !important;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+
+  .right {
+    display: none !important;
+  }
+
+  .overlay-info {
+    padding: 0 0 20px 0 !important;
+    p {
+      padding: 0 !important;
+    }
+  }
+
+  .overlay-img {
+    width: 100%;
+    img {
+      width: 60%;
+      padding: 30px 43px 10px 30px !important;
+    }
+  }
+  .right-wrapper {
+    gap: 0 !important;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  h2{
+    font-size: 42px;
+  } 
+
+  .skillset {
+    padding-top: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-img{
+    display: none !important;
+  } 
+  .overlay-content {
+    width: 90%;;
   }
 }
 
 .close {
   @include dFlex($g: 8px);
-  position: absolute;
-  top: 16vh;
-  right: 16vw;
   border: none;
   background-color: transparent;
   color: $green-light;
-  &:hover {
-    content: url("./../../../../assets/img/close-hover.svg");
+  &:hover img {
+    transform: scale(1.5);
+    color: $green-light;
+    padding: 32px !important;
+  }
+}
+
+.right-wrapper {
+  @include dFlex($ai: flex-end, $fd: column, $g: 56px, $jc: flex-start);
+  height: 100%;
+  button img {
+    padding: 32px 32px 32px 0;
   }
 }
