@@ -1,51 +1,57 @@
 <section>
   <div data-aos="flip-up" class="text-box">
-    <div class="skills-head"><span>{{ 'skills.subtitle' | translate }}</span></div>
+    <div class="skills-head">
+      <span>{{ "skills.subtitle" | translate }}</span>
+    </div>
     <div class="box-border">
-        <h2>{{ 'skills.title' | translate }}</h2>
-        <p>{{ 'skills.text' | translate }}</p>
-        <h3 class="fontFira">
-            <span class="white">{{ 'skills.q1' | translate }}</span>
-            <span>{{ 'skills.q2' | translate }}</span>
-        </h3>
-        <p>{{ 'skills.ctaContact' | translate }}</p>
-        <app-button [label]="'skills.ctaBtn' | translate"
-        [targetId]="'projects'"></app-button>
+      <h2>{{ "skills.title" | translate }}</h2>
+      <p>{{ "skills.text" | translate }}</p>
+      <h3 class="fontFira">
+        <span class="white">{{ "skills.q1" | translate }}</span>
+        <span>{{ "skills.q2" | translate }}</span>
+      </h3>
+      <p>{{ "skills.ctaContact" | translate }}</p>
+      <app-button
+        [label]="'skills.ctaBtn' | translate"
+        [targetId]="'projects'"
+      ></app-button>
     </div>
   </div>
   <div data-aos="flip-up" class="skillset">
     <div class="skill-icon">
-        <img src="assets/img/html.png"/><span>HTML</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/css.png" alt="" /><span>CSS</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/javascript.png" alt="" /><span>JavaScript</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/material-design.png" alt="" /><span>Material</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/typeScript.png" alt="" /><span>Typescript</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/angular.png" alt="" /><span>Angular</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/firebase.png" alt="" /><span>Firebase</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/git.png" alt="" /><span>Git</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/rest-api.png" alt="" /><span>Rest-Api</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/scrum.png" alt="" /><span>scrum</span>
-      </div>
-      <div class="skill-icon">
-        <img src="assets/img/growth-mindset.png" alt="" /><span>Growth</span>
-      </div>
+      <img src="assets/img/html.png" /><span>HTML</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/css.png" alt="" /><span>CSS</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/javascript.png" alt="" /><span>JavaScript</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/material-design.png" alt="" /><span>Material</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/typeScript.png" alt="" /><span>Typescript</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/angular.png" alt="" /><span>Angular</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/firebase.png" alt="" /><span>Firebase</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/git.png" alt="" /><span>Git</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/rest-api.png" alt="" /><span>Rest-Api</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/scrum.png" alt="" /><span>scrum</span>
+    </div>
+    <div class="skill-icon growth">
+      <div class="tooltip">I'm interested in learning React!</div>
+      <img src="assets/img/growth-mindset.png" alt="" />
+      <span>Growth</span>
+    </div>
   </div>
 </section>

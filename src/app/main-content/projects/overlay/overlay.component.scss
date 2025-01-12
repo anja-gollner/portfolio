@@ -14,14 +14,17 @@
     @include dFlex();
     width: 80%;
     overflow-y: auto;
-    height: 80%;
+    padding: 40px 20px;
     background: linear-gradient(45deg, $bg_dark 40%, $bg_green 100%);
     border-radius: calc(2vh + 2vw);
     border: 1px solid $green-light;
     max-width: 1440px;
-    @media (max-width: 1000px) and (min-height: 800px) {
-      flex-direction: column-reverse;
-      height: auto;
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse !important;
+      padding: 10px !important;
+    }
+    @media (max-width: 500px) {
+      width: 100% !important;
     }
 
     .overlay-info {
@@ -93,6 +96,9 @@
       @include dFlex();
     }
   }
+  @media (max-width: 400px) {
+    justify-content: center !important;
+  }
 }
 
 .next {
@@ -111,7 +117,7 @@
   display: none !important;
 }
 
-@media (max-width: 1000px) and (min-height: 800px){
+@media (max-width: 1000px){
   .left {
     display: flex !important;
     width: 100%;
@@ -131,7 +137,7 @@
   }
 
   .overlay-img {
-    width: 100%;
+    width: 80%;
     img {
       width: 60%;
       padding: 30px 43px 10px 30px !important;
@@ -175,7 +181,7 @@
 }
 
 .right-wrapper {
-  @include dFlex($ai: flex-end, $fd: column, $g: 56px, $jc: flex-start);
+  @include dFlex($ai: flex-end, $fd: column, $g: 56px);
   height: 100%;
   button img {
     padding: 32px 32px 32px 0;

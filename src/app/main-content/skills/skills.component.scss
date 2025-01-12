@@ -65,6 +65,7 @@ section {
         @include dFlex($fd: column, $g:8px);
         width: 128px;
         padding: 10px 0;
+        cursor: pointer;
         img {
             height: 56px;
             transition: transform 500ms ease;
@@ -74,6 +75,38 @@ section {
         }
     }
   }
+}
+
+.growth .tooltip {
+  position: absolute;
+  bottom: 30%;
+  left: 75%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.growth .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.growth:hover .tooltip {
+  visibility: visible;
+  opacity: 1; 
 }
 
 p {

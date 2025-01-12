@@ -48,8 +48,8 @@
     "next": "Next project"
   },
   "references": {
-    "textbox1": "hallo1",
-    "textbox2": "hallo2",
+    "textbox1": "Anja impressed with her exceptional quick comprehension and her high work speed. It quickly grasps complex relationships and implements solutions in the shortest possible time, which speeds up the work process enormously.",
+    "textbox2": "Anja was always committed, reliable and demonstrated outstanding technical skills. With her proactive and solution-oriented way of working, she contributed significantly to the success of the project.",
     "textbox3": "hallo3",
     "title": "What my colleagues say about me"
   },
@@ -128,7 +128,7 @@
       },
       "responsibleParty": {
         "title": "Notice about the Responsible Party",
-        "content": "The responsible party for data processing on this website is: Marcus Hartmann, Liegnitzer Str. 16, 10999 Berlin. Phone: +4915140306800, Email: info(at)marcus-hartmann.net"
+        "content": "The responsible party for data processing on this website is: Anja Gollner, Schildbach 42, 8230 Hartberg. Phone: +43 6644821051, Email: anjakgollner@gmail.com"
       },
       "storageDuration": {
         "title": "Storage Duration",

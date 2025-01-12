@@ -16,7 +16,7 @@ projects: Project[] = [
       imgOverlay: './../../assets/img/join_overlay.png',
       description: '',
       gitHubUrl: 'https://github.com/anja-gollner/join',
-      projectUrl: 'https://join.anja-gollner.com/',
+      projectUrl: 'http://join.anja-gollner.com/',
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ projects: Project[] = [
       imgOverlay: './../../assets/img/el-pollo-loco_overlay.png',
       description: '',
       gitHubUrl: 'https://github.com/anja-gollner/elPolloLoco',
-      projectUrl: 'https://elpolloloco.anja-gollner.com/',
+      projectUrl: 'http://elpolloloco.anja-gollner.com/',
     },
 
     {

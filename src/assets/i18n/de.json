@@ -48,8 +48,8 @@
     "next": "Nächstes Projekt"
   },
   "references": {
-    "textbox1": "hallo1",
-    "textbox2": "hallo2",
+    "textbox1": "Anja hat durch ihre außergewöhnliche schnelle Auffassungsgabe und ihr hohes Arbeitstempo beeindruckt. Sie erfasst komplexe Zusammenhänge rasch und setzt Lösungen in kürzester Zeit um, was den Arbeitsprozess enorm beschleunigt.",
+    "textbox2": "Anja war stets engagiert, zuverlässig und zeigte herausragende technische Fähigkeiten. Mit ihrer proaktiven und lösungsorientierten Arbeitsweise hat sie maßgeblich zum Erfolg des Projekts beigetragen.",
     "textbox3": "hallo3",
     "title": "Was meine Kollegen über mich sagen"
   },
@@ -128,7 +128,7 @@
       },
       "responsibleParty": {
         "title": "Hinweis zur verantwortlichen Stelle",
-        "content": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Marcus Hartmann, Liegnitzer Str. 16, 10999 Berlin. Telefon: +4915140306800, E-Mail: info(at)marcus-hartmann.net"
+        "content": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Anja Gollner, Schildbach 42, 8230 Hartberg. Telefon: +43 6644821051, E-Mail: anjakgollner@gmail.com"
       },
       "storageDuration": {
         "title": "Speicherdauer",
