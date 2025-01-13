@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [FormsModule, TranslateModule, CommonModule, RouterLink],
   templateUrl: './contact-form.component.html',
-  styleUrl: './contact-form.component.scss'
+  styleUrl: './contact-form.component.scss',
 })
 export class ContactFormComponent {
   http = inject(HttpClient);
@@ -59,14 +59,10 @@ export class ContactFormComponent {
         'Please fill out all fields correctly and ensure the message has at least 10 words.';
       ngForm.resetForm();
     }
+
+    const footerElement = document.getElementById('footer');
+    if (footerElement) {
+      footerElement.scrollIntoView({ behavior: 'smooth' });
+    }
   }
-
-  // Wenn man nicht mehr testet, kann der ganze elseif Teil raus
-
-  // onSubmit(ngForm: NgForm) {
-  //   if (ngForm.valid && ngForm.submitted) {
-  //     this.formSubmitted = signal(true);
-  //     console.log(this.contactData);
-  //   }
-  // }
 }
