@@ -21,6 +21,8 @@ section {
     img {
       border-radius: 32px;
       width: 100%;
+      border: 1px solid $green-light;
+      background-color: rgba(10, 45, 36, 0.371);
     }
   }
   .text-box {

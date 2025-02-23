@@ -11,7 +11,7 @@ projects: Project[] = [
     {
       id: 1,
       title: 'Join',
-      stack: ['Angular', 'Typescript', 'HTML', 'CSS', 'Firebase'],
+      stack: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
       imageUrl: './../../assets/img/join.png',
       imgOverlay: './../../assets/img/join_overlay.png',
       description: '',
@@ -32,11 +32,11 @@ projects: Project[] = [
     {
       id: 3,
       title: 'DA Bubble',
-      stack: ['Angular', 'Typescript', 'Firebase'],
+      stack: ['Angular', 'TypeScript', 'Firebase'],
       imageUrl: './../../assets/img/da-bubble.png',
       imgOverlay: './../../assets/img/da-bubble_overlay.png',
       description: '',
-      gitHubUrl: '',
+      gitHubUrl: 'https://github.com/anja-gollner/DaBubble-angular',
       projectUrl: 'https://dabubble.anja-gollner.com/',
     },
   ];

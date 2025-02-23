@@ -6,7 +6,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LanguageService {
   constructor(private translate: TranslateService) {
-    if (!this.translate.currentLang) {
+    const storedLang = localStorage.getItem('language');
+
+    if (storedLang) {
+      this.translate.use(storedLang);
+    } else {
       this.translate.setDefaultLang('de');
       this.translate.use('de');
     }
@@ -16,6 +20,7 @@ export class LanguageService {
     const currentLang = this.translate.currentLang;
     const newLang = currentLang === 'en' ? 'de' : 'en';
     this.translate.use(newLang);
+    localStorage.setItem('language', newLang);
   }
 
   currentLanguage() {

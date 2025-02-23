@@ -24,12 +24,6 @@ import 'aos/dist/aos.css';
 export class AppComponent {
   constructor(private translate: TranslateService) {}
 
-  ngOnInit(): void {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('de');
-    this.translate.use('de');
-  }
-
   title = 'portfolio';
 
   ngAfterViewInit(): void {
