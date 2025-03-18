@@ -5,7 +5,7 @@
     "projects": "Projects"
   },
   "hero": {
-    "subtitle": "Frontend Developer"
+    "subtitle": "Fullstack Developer"
   },
   "heroBtn": {
     "projects": "Check my work",
@@ -13,14 +13,14 @@
   },
   "marquee": {
     "item1": "Avaiable for remote work",
-    "item2": "Frontend Developer",
+    "item2": "Fullstack Developer",
     "item3": "Based in Styria",
     "item4": "Open to work"
   },
   "aboutMe": {
     "subtitle": "Who I am",
     "title": "About me",
-    "text": "Hi, I’m a Frontend Developer based in Styria. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating and intuitive websites and applications.",
+    "text": "Hi, I’m a Fullstack Developer based in Styria. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating and intuitive websites and applications.",
     "location": "Flexible in terms of working environments, I can work effectively both on-site in Styria and remotely.",
     "mindset": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
     "profession": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
@@ -58,7 +58,7 @@
     "title": "Let's work together",
     "question1": "Got a problem to solve?",
     "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-    "question2": "Need a Frontend developer ? ",
+    "question2": "Need a Fullstack developer ? ",
     "cta": "Let´s talk!"
   },
   "contactForm": {
