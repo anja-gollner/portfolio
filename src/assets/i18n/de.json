@@ -5,33 +5,35 @@
     "projects": "Projekte"
   },
   "hero": {
-    "subtitle": "Fullstack Entwicklerin"
+    "subtitle": "Fokus auf Kernaufgaben",
+    "h1.1": "Moderne Webseiten",
+    "h1.2": "& digitale Lösungen"
   },
   "heroBtn": {
     "projects": "Meine Projekte",
     "contact": "Kontakt"
   },
   "marquee": {
-    "item1": "Remote Arbeiten möglich",
-    "item2": "Fullstack Entwicklerin",
-    "item3": "Aus der Steiermark",
-    "item4": "Offen für neue Herausforderungen"
+    "item1": "Maßgeschneiderte Softwarelösungen",
+    "item2": "Moderne Webanwendungen mit Logik",
+    "item3": "Effiziente digitale Tools",
+    "item4": "Fullstack-Entwicklung für smarte Prozesse"
   },
   "aboutMe": {
     "subtitle": "Wer ich bin",
     "title": "Über mich",
-    "text": "Hi, ich bin Fullstack Entwicklerin aus der Steiermark. Die unbegrenzten Möglichkeiten in der IT faszinieren mich, und ich freue mich darauf, Websites und Anwendungen zu gestalten, die sowohl ansprechend als auch benutzerfreundlich sind.",
-    "location": "Flexibel in Bezug auf Arbeitsumgebungen: Ich kann sowohl vor Ort in der Steiermark als auch remote oder hybrid arbeiten.",
-    "mindset": "Ich bin aufgeschlossen und stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
-    "profession": "In meinem Beruf geht es beim Programmieren nicht nur darum, Code zu schreiben – es ist eine kreative Art des Problemlösens. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln. So helfe ich dabei, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+    "text": "Ich bin eine Fullstack-Entwicklerin aus der Steiermark und habe mich darauf spezialisiert, innovative Softwarelösungen und Webapplikationen zu entwickeln. Die unendlichen Möglichkeiten der IT motivieren mich, maßgeschneiderte Produkte zu gestalten – von funktionalen Websites bis hin zu komplexen Anwendungen, die sowohl technisch überzeugen als auch intuitiv bedienbar sind.",
+    "location": "Mich faszinieren moderne Technologien, insbesondere im Bereich der Webentwicklung, künstlichen Intelligenz und skalierbarer Softwarearchitektur. Ich liebe es, neue Tools und Trends zu erkunden, um meinen Kunden stets zukunftsweisende Lösungen anzubieten.",
+    "mindset": "Mit einem offenen Mindset und dem Antrieb, mich stetig weiterzuentwickeln, nehme ich jede Herausforderung an, um technisches Wissen und kreative Ansätze optimal zu verbinden.",
+    "profession": "Als selbstständige Entwicklerin betrachte ich Programmieren als Kunstform des Problemlösens. Mein Fokus liegt darauf, komplexe Anforderungen in effiziente Softwarelösungen und benutzerfreundliche Webapplikationen zu verwandeln. So unterstütze ich Unternehmen dabei, ihre Prozesse zu optimieren, digitale Präsenzen zu stärken und ihre Visionen erfolgreich umzusetzen."
   },
   "skills": {
     "subtitle": "Technologien",
-    "title": "Skill set",
+    "title": "Skill-Set",
     "q1": "Sie benötigen",
     "q2": "weitere Fähigkeiten?",
-    "text": "Auf meinem Weg habe ich an vielfältigen Projekten gearbeitet und dabei eine Reihe von Frontend-Technologien und Konzepten eingesetzt. Ich bin offen dafür, neue Technologien und Methoden zu erlernen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig wandelnden Welt der Webentwicklung stets einen Schritt voraus zu sein.",
-    "ctaContact": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
+    "text": "Als selbstständige Fullstack-Entwicklerin habe ich an vielfältigen Projekten gearbeitet und dabei eine breite Palette an Fullstack-Technologien und Konzepten eingesetzt.",
+    "ctaContact": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein Wissen einzubringen und auf Ihre Anforderungen zugeschnitten weiterzuentwickeln.",
     "ctaBtn": "Kontaktieren Sie mich"
   },
   "projects": {

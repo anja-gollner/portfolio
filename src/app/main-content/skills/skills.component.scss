@@ -77,39 +77,23 @@ section {
   }
 }
 
-.growth .tooltip {
-  position: absolute;
-  bottom: 30%;
-  left: 75%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-size: 14px;
-  white-space: nowrap;
-  visibility: visible;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.growth .tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 6px;
-  border-style: solid;
-  border-color: #333 transparent transparent transparent;
-}
-
-.growth:hover .tooltip {
-  visibility: visible;
-  opacity: 1; 
-}
-
 p {
     font-weight: 300;
     padding-bottom: 10px;
+}
+
+.ctn-skill-switch {
+  @include dFlex($g: 24px);
+  font-size: 24px;
+  padding-top: 22px;
+
+  .skill-switch {
+      font-weight: 700;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+          cursor: pointer;
+          color: $green_light;
+      }
+  }
 }

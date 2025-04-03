@@ -15,7 +15,7 @@
   @include dFlex($ai: center, $jc: center, $fd: column);
   h1 {
     font-weight: 600;
-    font-size: 80px;
+    font-size: 72px;
     text-align: center;
     margin-bottom: 28px;
     @media (max-width: 644px) {

@@ -17,7 +17,8 @@
       ></app-button>
     </div>
   </div>
-  <div data-aos="flip-up" class="skillset">
+  <div class="skillset-container">
+  <div *ngIf="showFrontend" data-aos="flip-up" class="skillset">
     <div class="skill-icon">
       <img src="assets/img/html.png" /><span>HTML</span>
     </div>
@@ -48,10 +49,46 @@
     <div class="skill-icon">
       <img src="assets/img/scrum.png" alt="" /><span>scrum</span>
     </div>
-    <div class="skill-icon growth">
-      <div class="tooltip">I'm interested in learning React!</div>
-      <img src="assets/img/growth-mindset.png" alt="" />
-      <span>Growth</span>
+  </div>
+
+  <div *ngIf="!showFrontend" data-aos="flip-up" class="skillset">
+    <div class="skill-icon">
+      <img src="assets/img/Linux.svg" /><span>Linux</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/Python.svg" alt="" /><span>Python</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/Docker.svg" alt="" /><span>Docker</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/SQL.svg" alt="" /><span>SQL</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/Django.svg" alt="" /><span>Djano</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/PostgreSQL.svg" alt="" /><span>Postgres</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/Redis.svg" alt="" /><span>Redis</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/Heroku.svg" alt="" /><span>Heroku</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/Flask.svg" alt="" /><span>Flask</span>
+    </div>
+    <div class="skill-icon">
+      <img src="assets/img/Cloud.svg" alt="" /><span>Cloud</span>
     </div>
   </div>
+  <div class="ctn-skill-switch">
+    <span class="skill-switch" [ngClass]="{ 'active': showFrontend }"
+        (click)="showFrontend = true">Frontend</span>
+    <span>|</span>
+    <span class="skill-switch" [ngClass]="{ 'active': !showFrontend }"
+        (click)="showFrontend = false">Backend</span>
+</div>
+</div>
 </section>
