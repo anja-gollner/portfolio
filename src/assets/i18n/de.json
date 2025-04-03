@@ -45,7 +45,9 @@
     "description": {
       "1": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
       "2": "Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
-      "3": "Diese App ist ein Slack-Clone. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation."
+      "3": "Diese App ist ein Slack-Clone. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation.",
+      "4": "Eine Plattform für Freiberufler, die Freiberufler mit Kunden verbindet. Sie bietet eine benutzerfreundliche Oberfläche zum Posten von Jobs, Bieten und Verwalten von Projekten.",
+      "5": "Eine Video-Streaming-Plattform, die es Benutzern ermöglicht, Videos anzusehen. Sie umfasst Funktionen wie Benutzerprofile und Aktivierung."
     },
     "next": "Nächstes Projekt"
   },
@@ -130,7 +132,7 @@
       },
       "responsibleParty": {
         "title": "Hinweis zur verantwortlichen Stelle",
-        "content": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Anja Gollner, Schildbach 42, 8230 Hartberg. Telefon: +43 6644821051, E-Mail: anjakgollner@gmail.com"
+        "content": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: Anja Gollner, Schildbach 42, 8230 Hartberg. Telefon: +43 6644821051, E-Mail: contact@anja-gollner.com"
       },
       "storageDuration": {
         "title": "Speicherdauer",

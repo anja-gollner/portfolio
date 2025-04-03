@@ -39,6 +39,26 @@ projects: Project[] = [
       gitHubUrl: 'https://github.com/anja-gollner/DaBubble-angular',
       projectUrl: 'https://dabubble.anja-gollner.com/',
     },
+    {
+      id: 4,
+      title: 'Coderr',
+      stack: ['JavaScript', 'Python', 'Django'],
+      imageUrl: './../../assets/img/coderr.png',
+      imgOverlay: './../../assets/img/coderr.png',
+      description: 'A platform for developers to share and find coding challenges.',
+      gitHubUrl: 'https://github.com/anja-gollner/coderr_backend',
+      projectUrl: '',
+    },
+    {
+      id: 5,
+      title: 'Videoflix',
+      stack: ['Angular', 'TypeScript', 'Python', 'Django'],
+      imageUrl: './../../assets/img/videoflix.png',
+      imgOverlay: './../../assets/img/videoflix.png',
+      description: 'A web application for streaming and managing video content.',
+      gitHubUrl: 'https://github.com/anja-gollner/videoflix_backend',
+      projectUrl: '',
+    },
   ];
 
   getProjects(): Project[] {

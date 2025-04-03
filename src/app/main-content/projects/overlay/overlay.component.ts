@@ -50,4 +50,8 @@ export class OverlayComponent {
       this.project = this.projects[this.currentIndex];
     }
   }
+
+  isButtonVisible(): boolean {
+    return !!this.project?.projectUrl;
+  }
 }

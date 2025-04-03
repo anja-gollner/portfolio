@@ -45,7 +45,10 @@
     "description": {
       "1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "2": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-      "3": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+      "3": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "4": "A freelancing platform that connects freelancers with clients. It offers a user-friendly interface for posting jobs, bidding, and managing projects.",
+      "5": "A video streaming platform that allows users to watch videos. It includes features like user profiles, and activation."
+
     },
     "next": "Next project"
   },
@@ -130,7 +133,7 @@
       },
       "responsibleParty": {
         "title": "Notice about the Responsible Party",
-        "content": "The responsible party for data processing on this website is: Anja Gollner, Schildbach 42, 8230 Hartberg. Phone: +43 6644821051, Email: anjakgollner@gmail.com"
+        "content": "The responsible party for data processing on this website is: Anja Gollner, Schildbach 42, 8230 Hartberg. Phone: +43 6644821051, Email: contact@anja-gollner.com"
       },
       "storageDuration": {
         "title": "Storage Duration",

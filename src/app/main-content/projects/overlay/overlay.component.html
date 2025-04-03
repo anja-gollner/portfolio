@@ -10,7 +10,6 @@
           <img
             [src]="getStackIconPath(singlestack)"
             alt="{{ singlestack }}"
-            alt=""
           />
           <span> {{ singlestack }}</span>
         </div>
@@ -20,7 +19,7 @@
           <span>Github</span>
           <img src="assets/img/arrow_outward_green.svg" alt="" />
         </button>
-        <button (click)="redirectToUrl(project.projectUrl)">
+        <button *ngIf="isButtonVisible()" (click)="redirectToUrl(project.projectUrl)">
           <span>Live Test</span>
           <img src="assets/img/arrow_outward_green.svg" alt="" />
         </button>

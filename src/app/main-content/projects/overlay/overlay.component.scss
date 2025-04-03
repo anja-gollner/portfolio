@@ -94,6 +94,7 @@
     padding-right: 20px;
     img {
       @include dFlex();
+      height: 22px;
     }
   }
   @media (max-width: 400px) {
