@@ -15,11 +15,10 @@
   @include dFlex($ai: center, $jc: center, $fd: column);
   h1 {
     font-weight: 600;
-    font-size: 72px;
+    font-size: clamp(42px, 8vw, 72px);
     text-align: center;
     margin-bottom: 28px;
     @media (max-width: 644px) {
-      font-size: 7vH;
       margin-bottom: 16px;
     }
   }
@@ -48,6 +47,9 @@
     width: 1px;
     background-color: $green-light;
     height: 25vh;
+    @media (max-width: 900px) {
+      height: 18vh;
+    }
   }
   .vector {
     margin-bottom: 32px;
